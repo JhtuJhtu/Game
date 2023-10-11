@@ -1,8 +1,10 @@
 #pragma once
 #include "Engine.h"
 
+#include <Windows.h>
 int main()
 {
+	ShowWindow(::GetConsoleWindow(), SW_HIDE);
 	int windowHeight = 820;
 	int windowWidth = 480;
 	sf::RenderWindow window (sf::VideoMode(windowHeight, windowWidth), "", sf::Style::Close);
@@ -23,5 +25,6 @@ int main()
 		}
 		
 	}
+	
 	return 0;
 }

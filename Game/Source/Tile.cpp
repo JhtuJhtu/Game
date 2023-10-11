@@ -25,23 +25,28 @@ Tile::TileType Tile::getTileType() {
 
 void Tile::openPassage(Textures& textures) {
 	std::cout << "Can't 'openPassage': It's not a door";
+	ShowWindow(::GetConsoleWindow(), SW_SHOW);
 }
 
 void Tile::openDoor(Textures& textures) {
 	std::cout << "Can't 'openDoor': It's not a door";
+	ShowWindow(::GetConsoleWindow(), SW_SHOW);
 }
 
 void Tile::endDoor(Textures& textures) {
 	std::cout << "Can't 'endDoor': It's not a door";
+	ShowWindow(::GetConsoleWindow(), SW_SHOW);
 }
 
 bool Tile::isOpen() {
 	std::cout << "Can't 'isOpen': It's not a door";
+	ShowWindow(::GetConsoleWindow(), SW_SHOW);
 	return false;
 }
 
 bool Tile::isEnd() {
 	std::cout << "Can't 'isEnd': It's not a door";
+	ShowWindow(::GetConsoleWindow(), SW_SHOW);
 	return false;
 }
 

@@ -6,7 +6,7 @@ Floor::Floor() : floorX(4), floorY(floorSizeY - 1), floorRooms() {
 void Floor::createFloor(Textures& textures) {
 	int oldFloorX = 0;
 	int oldFloorY = 0;
-	int roomsLeft = 1;
+	int roomsLeft = 4;
 	bool end = false;
 	enum Side {
 		UP = 1,
